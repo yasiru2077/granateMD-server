@@ -49,7 +49,7 @@ def predict():
         
         image_arr = preprocessing(image)
         if image_arr is None:
-            return jsonify({"error": "Error in preprocessing the image"}), 500
+            return jsonify({"error": "Having a Error in preprocessing the image"}), 500
         
         print(f"Image array shape: {image_arr.shape}")
         
